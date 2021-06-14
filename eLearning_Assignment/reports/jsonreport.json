@@ -1,0 +1,104 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3589547100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Create an account and Send mail with newly created account",
+        "description": "",
+        "id": "add-an-account-in-elearning-portal;-send-mail-from-this-account-and-acknowledge-mail-sent-to-sender;create-an-account-and-send-mail-with-newly-created-account",
+        "after": [
+          {
+            "result": {
+              "duration": 960445200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5130151500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch the eLearning portal",
+            "match": {
+              "location": "StepDefinition.launch_the_eLearning_portal()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1567337600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User clicked signup button",
+            "match": {
+              "location": "StepDefinition.user_clicked_signup_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16547746700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Create User and verify user created",
+            "match": {
+              "location": "StepDefinition.create_User_and_verify_user_created()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11220781900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Send Mail",
+            "match": {
+              "location": "StepDefinition.send_Mail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 197085100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify Acknowledge message",
+            "match": {
+              "location": "StepDefinition.verify_Acknowledge_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add an account in eLearning portal; send mail from this account and acknowledge mail sent to sender",
+    "description": "",
+    "id": "add-an-account-in-elearning-portal;-send-mail-from-this-account-and-acknowledge-mail-sent-to-sender",
+    "keyword": "Feature",
+    "uri": "Assignment.feature"
+  }
+]
