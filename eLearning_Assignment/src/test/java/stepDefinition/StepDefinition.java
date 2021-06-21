@@ -167,9 +167,13 @@ public class StepDefinition {
 		           break;
 		       }
 		   }*/
-		   
-		  driver.findElement(By.xpath("/html/body/main/section/div/div[2]/div/div/div[2]/div/div[2]/form/fieldset/div[1]/div[1]/span/span[1]/span/ul/li/input")).click();
-		  driver.findElement(By.className("select2-search__field")).sendKeys("SDET", Keys.RETURN);
+		   driver.findElement(By.xpath("//ul[@class='select2-selection__rendered']//input[@role='textbox']")).sendKeys("SDET");
+		    Thread.sleep(3000);
+		    
+			driver.findElement(By.xpath("//ul[@id='select2-compose_message_users-results']/li")).click();
+		    System.out.println("User enters the recepient email address");		   
+		  //driver.findElement(By.xpath("/html/body/main/section/div/div[2]/div/div/div[2]/div/div[2]/form/fieldset/div[1]/div[1]/span/span[1]/span/ul/li/input")).click();
+		  //driver.findElement(By.className("select2-search__field")).sendKeys("SDET", Keys.RETURN);
 		//  driver.findElement(By.className("select2-search__field")).sendKeys("SDET","\13");
 		  
 		   //driver.findElement(By.xpath("/html/body/main/section/div/div[2]/div/div/div[2]/div/div[2]/form/fieldset/div[1]/div[1]/span/span[1]/span/ul/li/input")).sendKeys("SDET");
@@ -192,9 +196,9 @@ public class StepDefinition {
 		   
 		//   driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL,Keys.END);
 		   driver.findElement(By.xpath("/html/body/main/section/div/div[2]/div/div/div[2]/div/div[2]/form/fieldset/div[7]/div[1]/button")).click();
-		   driver.findElement(By.xpath("/html/body/main/section/div/div[2]/div/div/div[2]/div/div[2]/form/fieldset/div[7]/div[1]/button")).click();
+		//   driver.findElement(By.xpath("/html/body/main/section/div/div[2]/div/div/div[2]/div/div[2]/form/fieldset/div[7]/div[1]/button")).click();
 			try {
-				Thread.sleep(300);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
